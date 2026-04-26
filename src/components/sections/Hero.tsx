@@ -10,6 +10,7 @@ export default function Hero() {
       flexDirection: 'column',
       justifyContent: 'flex-end',
       padding: 'clamp(40px, 6vw, 80px)',
+      paddingBottom: 'clamp(120px, 20vh, 220px)',
       overflow: 'hidden',
       background: '#060608',
     }}>
@@ -46,7 +47,7 @@ export default function Hero() {
           letterSpacing: '0.55em',
           textTransform: 'uppercase',
           color: '#C9A84C',
-          fontWeight: 200,
+          fontWeight: 300,
         }}
       >
         AI-Native Digital Studio
@@ -103,7 +104,7 @@ export default function Hero() {
           <p style={{
             fontFamily: 'Outfit, sans-serif',
             fontSize: 'clamp(13px, 1.5vw, 16px)',
-            fontWeight: 200,
+            fontWeight: 300,
             color: 'rgba(242,237,228,0.45)',
             maxWidth: '420px',
             lineHeight: 1.7,

@@ -164,7 +164,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             style={{
               fontFamily: 'Outfit, sans-serif',
               fontSize: 'clamp(13px, 1.5vw, 15px)',
-              fontWeight: 200,
+              fontWeight: 300,
               color: 'rgba(242,237,228,0.5)',
               lineHeight: 1.7,
               marginBottom: '40px',
