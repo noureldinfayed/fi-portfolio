@@ -8,9 +8,9 @@ export default function Hero() {
       height: '100svh',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
       padding: 'clamp(40px, 6vw, 80px)',
-      paddingBottom: 'clamp(120px, 20vh, 220px)',
+      paddingTop: 'clamp(160px, 24vh, 240px)',
       overflow: 'hidden',
       background: '#060608',
     }}>
@@ -93,13 +93,6 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          style={{
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '24px',
-          }}
         >
           <p style={{
             fontFamily: 'Outfit, sans-serif',
@@ -112,31 +105,41 @@ export default function Hero() {
             Eleven live products across healthcare, hospitality,
             legal, real estate, and AI. Cairo to Düsseldorf.
           </p>
-
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '12px',
-          }}>
-            <p style={{
-              fontFamily: 'Outfit, sans-serif',
-              fontSize: '9px',
-              letterSpacing: '0.4em',
-              textTransform: 'uppercase',
-              color: 'rgba(242,237,228,0.3)',
-            }}>
-              Scroll to discover
-            </p>
-            <div style={{
-              width: '1px',
-              height: '50px',
-              background: 'linear-gradient(to bottom, #C9A84C, transparent)',
-              animation: 'pulse 2s ease-in-out infinite',
-            }} />
-          </div>
         </motion.div>
       </div>
+
+      {/* Scroll indicator pinned to bottom */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.4 }}
+        style={{
+          position: 'absolute',
+          bottom: 'clamp(40px, 6vw, 80px)',
+          right: 'clamp(40px, 6vw, 80px)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '12px',
+          zIndex: 1,
+        }}
+      >
+        <p style={{
+          fontFamily: 'Outfit, sans-serif',
+          fontSize: '9px',
+          letterSpacing: '0.4em',
+          textTransform: 'uppercase',
+          color: 'rgba(242,237,228,0.3)',
+        }}>
+          Scroll to discover
+        </p>
+        <div style={{
+          width: '1px',
+          height: '50px',
+          background: 'linear-gradient(to bottom, #C9A84C, transparent)',
+          animation: 'pulse 2s ease-in-out infinite',
+        }} />
+      </motion.div>
     </section>
   )
 }
