@@ -35,7 +35,7 @@ export default function FooterSection() {
       </div>
 
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{ overflow: 'hidden', marginBottom: '12px', paddingBottom: '0.18em' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '12px', paddingBottom: '0.3em' }}>
           <motion.h2
             initial={{ y: '105%' }}
             animate={inView ? { y: '0%' } : {}}

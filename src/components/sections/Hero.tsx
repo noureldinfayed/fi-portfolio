@@ -54,7 +54,7 @@ export default function Hero() {
       </motion.p>
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: '900px' }}>
-        <div style={{ overflow: 'hidden', marginBottom: '8px', paddingBottom: '0.18em' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '8px', paddingBottom: '0.3em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
@@ -71,7 +71,7 @@ export default function Hero() {
             We build
           </motion.h1>
         </div>
-        <div style={{ overflow: 'hidden', marginBottom: '36px', paddingBottom: '0.18em' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '36px', paddingBottom: '0.3em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}

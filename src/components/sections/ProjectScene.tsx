@@ -108,7 +108,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             }}>{project.category}</span>
           </motion.div>
 
-          <div style={{ overflow: 'hidden', marginBottom: '6px', paddingBottom: '0.18em' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '6px', paddingBottom: '0.3em' }}>
             <motion.h2
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}
@@ -124,7 +124,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
               {project.name}
             </motion.h2>
           </div>
-          <div style={{ overflow: 'hidden', marginBottom: '28px', paddingBottom: '0.18em' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '28px', paddingBottom: '0.3em' }}>
             <motion.p
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}

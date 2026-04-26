@@ -73,8 +73,8 @@ export const projects = [
     category: 'Paysagisme',
     tagline: 'Du dessin au jardin vivant.',
     url: 'https://landscapers-template-3.vercel.app',
-    bgImage: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&q=90',
-    bgTint: 'rgba(4,10,4,0.72)',
+    bgImage: 'https://images.unsplash.com/lsuA7G-Akdk?w=1920&q=90',
+    bgTint: 'rgba(4,10,4,0.50)',
     accentColor: '#6B8F5E',
   },
   {
@@ -86,8 +86,8 @@ export const projects = [
     category: 'Paysagisme',
     tagline: 'Des extérieurs pensés comme des lieux de vie.',
     url: 'https://maison-paysage-template.vercel.app',
-    bgImage: 'https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=1920&q=90',
-    bgTint: 'rgba(4,8,4,0.70)',
+    bgImage: 'https://images.unsplash.com/3rADKQSylpQ?w=1920&q=90',
+    bgTint: 'rgba(4,8,4,0.50)',
     accentColor: '#7A9E6E',
   },
   {
@@ -99,8 +99,8 @@ export const projects = [
     category: 'Paysagisme',
     tagline: "L'art de vivre en plein air.",
     url: 'https://fayed-paysage-template.vercel.app',
-    bgImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=90',
-    bgTint: 'rgba(4,8,6,0.72)',
+    bgImage: 'https://images.unsplash.com/NPCr3uTn0HM?w=1920&q=90',
+    bgTint: 'rgba(4,8,6,0.50)',
     accentColor: '#8BAD7A',
   },
   {

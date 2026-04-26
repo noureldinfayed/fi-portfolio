@@ -64,7 +64,7 @@ export default function Navbar() {
         >
           Work
         </a>
-        <a href="https://fayedintelligence.com#team"
+        <a href="https://www.fayedintelligence.com/#team"
           target="_blank"
           style={{
             fontFamily: 'Outfit, sans-serif',
