@@ -43,7 +43,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          filter: 'brightness(0.55) saturate(0.7)',
+          filter: 'brightness(0.72) saturate(0.8)',
           transform: 'scale(1.05)',
           transition: 'transform 8s ease',
         }}
@@ -59,8 +59,8 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
         position: 'absolute',
         inset: 0,
         background: isEven
-          ? 'linear-gradient(to right, rgba(6,6,8,0.92) 0%, rgba(6,6,8,0.5) 50%, rgba(6,6,8,0.1) 100%)'
-          : 'linear-gradient(to left, rgba(6,6,8,0.92) 0%, rgba(6,6,8,0.5) 50%, rgba(6,6,8,0.1) 100%)',
+          ? 'linear-gradient(to right, rgba(6,6,8,0.72) 0%, rgba(6,6,8,0.35) 50%, rgba(6,6,8,0.05) 100%)'
+          : 'linear-gradient(to left, rgba(6,6,8,0.72) 0%, rgba(6,6,8,0.35) 50%, rgba(6,6,8,0.05) 100%)',
       }} />
 
       <div style={{
@@ -107,7 +107,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             }}>{project.category}</span>
           </motion.div>
 
-          <div style={{ overflow: 'hidden', marginBottom: '6px' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '6px', paddingBottom: '0.12em' }}>
             <motion.h2
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}
@@ -123,7 +123,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
               {project.name}
             </motion.h2>
           </div>
-          <div style={{ overflow: 'hidden', marginBottom: '28px' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '28px', paddingBottom: '0.12em' }}>
             <motion.p
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}

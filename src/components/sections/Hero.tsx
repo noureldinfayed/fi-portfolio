@@ -24,14 +24,14 @@ export default function Hero() {
           height: '100%',
           objectFit: 'cover',
           objectPosition: 'center',
-          filter: 'brightness(0.35) saturate(0.6)',
+          filter: 'brightness(0.55) saturate(0.75)',
         }}
       />
 
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(to top, rgba(6,6,8,0.95) 0%, rgba(6,6,8,0.3) 60%, rgba(6,6,8,0.5) 100%)',
+        background: 'linear-gradient(to top, rgba(6,6,8,0.80) 0%, rgba(6,6,8,0.15) 55%, rgba(6,6,8,0.35) 100%)',
       }} />
 
       <motion.p
@@ -54,7 +54,7 @@ export default function Hero() {
       </motion.p>
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: '900px' }}>
-        <div style={{ overflow: 'hidden', marginBottom: '8px' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '8px', paddingBottom: '0.12em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
@@ -71,7 +71,7 @@ export default function Hero() {
             We build
           </motion.h1>
         </div>
-        <div style={{ overflow: 'hidden', marginBottom: '32px' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '32px', paddingBottom: '0.12em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
