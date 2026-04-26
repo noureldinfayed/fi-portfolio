@@ -32,7 +32,7 @@ export function StudioInterlude() {
         >
           The Studio
         </motion.p>
-        <div style={{ overflow: 'hidden' }}>
+        <div style={{ overflow: 'hidden', paddingBottom: '0.18em' }}>
           <motion.p
             initial={{ y: '105%' }}
             animate={inView ? { y: '0%' } : {}}

@@ -43,7 +43,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          filter: 'brightness(0.72) saturate(0.8)',
+          filter: 'brightness(0.85) saturate(0.85)',
           transform: 'scale(1.05)',
           transition: 'transform 8s ease',
         }}
@@ -53,14 +53,15 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
         position: 'absolute',
         inset: 0,
         background: project.bgTint,
+        opacity: 0.55,
       }} />
 
       <div style={{
         position: 'absolute',
         inset: 0,
         background: isEven
-          ? 'linear-gradient(to right, rgba(6,6,8,0.72) 0%, rgba(6,6,8,0.35) 50%, rgba(6,6,8,0.05) 100%)'
-          : 'linear-gradient(to left, rgba(6,6,8,0.72) 0%, rgba(6,6,8,0.35) 50%, rgba(6,6,8,0.05) 100%)',
+          ? 'linear-gradient(to right, rgba(6,6,8,0.68) 0%, rgba(6,6,8,0.28) 50%, rgba(6,6,8,0.02) 100%)'
+          : 'linear-gradient(to left, rgba(6,6,8,0.68) 0%, rgba(6,6,8,0.28) 50%, rgba(6,6,8,0.02) 100%)',
       }} />
 
       <div style={{
@@ -89,17 +90,17 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
               fontSize: '13px',
               fontStyle: 'italic',
               color: project.accentColor,
-              opacity: 0.7,
+              opacity: 0.8,
             }}>{project.index}</span>
             <div style={{
               width: '40px',
               height: '1px',
               background: project.accentColor,
-              opacity: 0.4,
+              opacity: 0.5,
             }} />
             <span style={{
               fontFamily: 'Outfit, sans-serif',
-              fontSize: '9px',
+              fontSize: '10px',
               letterSpacing: '0.4em',
               textTransform: 'uppercase',
               color: project.accentColor,
@@ -107,7 +108,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             }}>{project.category}</span>
           </motion.div>
 
-          <div style={{ overflow: 'hidden', marginBottom: '6px', paddingBottom: '0.12em' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '6px', paddingBottom: '0.18em' }}>
             <motion.h2
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}
@@ -123,7 +124,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
               {project.name}
             </motion.h2>
           </div>
-          <div style={{ overflow: 'hidden', marginBottom: '28px', paddingBottom: '0.12em' }}>
+          <div style={{ overflow: 'hidden', marginBottom: '28px', paddingBottom: '0.18em' }}>
             <motion.p
               initial={{ y: '105%' }}
               animate={inView ? { y: '0%' } : {}}
@@ -147,10 +148,10 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             transition={{ duration: 0.8, delay: 0.5 }}
             style={{
               fontFamily: 'Outfit, sans-serif',
-              fontSize: '10px',
+              fontSize: '11px',
               letterSpacing: '0.35em',
               textTransform: 'uppercase',
-              color: 'rgba(242,237,228,0.3)',
+              color: 'rgba(242,237,228,0.5)',
               marginBottom: '20px',
             }}
           >
@@ -163,9 +164,9 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
             transition={{ duration: 0.8, delay: 0.55 }}
             style={{
               fontFamily: 'Outfit, sans-serif',
-              fontSize: 'clamp(13px, 1.5vw, 15px)',
+              fontSize: 'clamp(15px, 1.8vw, 18px)',
               fontWeight: 300,
-              color: 'rgba(242,237,228,0.5)',
+              color: 'rgba(242,237,228,0.70)',
               lineHeight: 1.7,
               marginBottom: '40px',
               maxWidth: '380px',
@@ -229,7 +230,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
         fontFamily: 'Cormorant, serif',
         fontSize: 'clamp(100px, 18vw, 220px)',
         fontWeight: 300,
-        color: 'rgba(242,237,228,0.03)',
+        color: 'rgba(242,237,228,0.04)',
         lineHeight: 1,
         userSelect: 'none',
         pointerEvents: 'none',

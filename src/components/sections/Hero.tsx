@@ -24,14 +24,14 @@ export default function Hero() {
           height: '100%',
           objectFit: 'cover',
           objectPosition: 'center',
-          filter: 'brightness(0.55) saturate(0.75)',
+          filter: 'brightness(0.72) saturate(0.8)',
         }}
       />
 
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'linear-gradient(to top, rgba(6,6,8,0.80) 0%, rgba(6,6,8,0.15) 55%, rgba(6,6,8,0.35) 100%)',
+        background: 'linear-gradient(to top, rgba(6,6,8,0.70) 0%, rgba(6,6,8,0.10) 50%, rgba(6,6,8,0.25) 100%)',
       }} />
 
       <motion.p
@@ -43,7 +43,7 @@ export default function Hero() {
           top: 'clamp(100px, 12vh, 140px)',
           left: 'clamp(24px, 5vw, 80px)',
           fontFamily: 'Outfit, sans-serif',
-          fontSize: '10px',
+          fontSize: '11px',
           letterSpacing: '0.55em',
           textTransform: 'uppercase',
           color: '#C9A84C',
@@ -54,7 +54,7 @@ export default function Hero() {
       </motion.p>
 
       <div style={{ position: 'relative', zIndex: 1, maxWidth: '900px' }}>
-        <div style={{ overflow: 'hidden', marginBottom: '8px', paddingBottom: '0.12em' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '8px', paddingBottom: '0.18em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
@@ -71,7 +71,7 @@ export default function Hero() {
             We build
           </motion.h1>
         </div>
-        <div style={{ overflow: 'hidden', marginBottom: '32px', paddingBottom: '0.12em' }}>
+        <div style={{ overflow: 'hidden', marginBottom: '36px', paddingBottom: '0.18em' }}>
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: '0%' }}
@@ -96,9 +96,9 @@ export default function Hero() {
         >
           <p style={{
             fontFamily: 'Outfit, sans-serif',
-            fontSize: 'clamp(13px, 1.5vw, 16px)',
+            fontSize: 'clamp(15px, 1.8vw, 19px)',
             fontWeight: 300,
-            color: 'rgba(242,237,228,0.45)',
+            color: 'rgba(242,237,228,0.65)',
             maxWidth: '420px',
             lineHeight: 1.7,
           }}>
@@ -108,7 +108,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator pinned to bottom */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -129,7 +128,7 @@ export default function Hero() {
           fontSize: '9px',
           letterSpacing: '0.4em',
           textTransform: 'uppercase',
-          color: 'rgba(242,237,228,0.3)',
+          color: 'rgba(242,237,228,0.35)',
         }}>
           Scroll to discover
         </p>
