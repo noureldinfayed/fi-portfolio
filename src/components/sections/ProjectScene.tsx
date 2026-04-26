@@ -118,7 +118,7 @@ export default function ProjectScene({ project, isEven }: ProjectSceneProps) {
                 fontSize: 'clamp(48px, 7vw, 96px)',
                 fontWeight: 300,
                 color: '#F2EDE4',
-                lineHeight: 0.95,
+                lineHeight: 1.0,
               }}
             >
               {project.name}

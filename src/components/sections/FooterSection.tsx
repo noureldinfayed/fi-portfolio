@@ -45,7 +45,7 @@ export default function FooterSection() {
               fontSize: 'clamp(40px, 7vw, 100px)',
               fontWeight: 300,
               color: '#F2EDE4',
-              lineHeight: 0.95,
+              lineHeight: 1.0,
             }}
           >
             Ready to start?

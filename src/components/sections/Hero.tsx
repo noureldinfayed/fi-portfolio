@@ -64,7 +64,7 @@ export default function Hero() {
               fontSize: 'clamp(52px, 9vw, 130px)',
               fontWeight: 300,
               color: '#F2EDE4',
-              lineHeight: 0.9,
+              lineHeight: 1.0,
               letterSpacing: '-0.01em',
             }}
           >
@@ -82,7 +82,7 @@ export default function Hero() {
               fontWeight: 300,
               fontStyle: 'italic',
               color: '#C9A84C',
-              lineHeight: 0.9,
+              lineHeight: 1.0,
             }}
           >
             experiences.
