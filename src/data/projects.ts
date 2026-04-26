@@ -81,7 +81,7 @@ export const projects = [
     id: 'maison-paysage',
     index: '07',
     name: 'Maison Paysage',
-    subtitle: 'Jardins & Terrasses d'Exception',
+    subtitle: "Jardins & Terrasses d'Exception",
     location: 'France',
     category: 'Paysagisme',
     tagline: 'Des extérieurs pensés comme des lieux de vie.',
